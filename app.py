@@ -52,7 +52,7 @@ with c1:
 with c2:
     st.markdown('<p class="section-label">Perilaku Pembayaran</p>', unsafe_allow_html=True)
     interest = st.slider("Interest Rate (%)", 0, 50, 12)
-    delay = st.slider("Delay from Due Date (days)", -10, 100, 10)
+    delay = st.slider("Delay from Due Date (days)", 0, 100, 10)
     n_delayed = st.slider("Num of Delayed Payments", 0, 100, 5)
     chg_limit = st.number_input("Changed Credit Limit", -50.0, 50.0, 5.0, step=0.5)
     inquiries = st.slider("Num Credit Inquiries", 0, 50, 4)
